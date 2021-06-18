@@ -67,9 +67,9 @@ class OnePerson extends Component {
                         <div className="date">{data.date}</div>
                         <br />
                         <div className="info">
+                            <div className="ipphone">avaya: <a href={`avaya://call?${data.ipphone}`}>{data.ipphone}</a></div>
                             <div className="work">раб.: {data.work}</div>
                             <div className="internal">внутр.: {data.internal}</div>
-                            <div className="ipphone">ip тел.: <a href={`tel:${data.ipphone}`}>{data.ipphone}</a></div>
                             <div className="business">служ.: {data.business}</div>
                             <div className="cellular">сот.: {data.cellular}</div>
                             <div className="place">место: {data.place}</div>
