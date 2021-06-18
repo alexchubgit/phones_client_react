@@ -57,7 +57,7 @@ class PApi extends Component {
                 {data && data.map(data =>
                     <div className="person" key={data.idperson.toString()}>
                         <div>
-                            <img className="photo-cont" src={`/photo/` + data.file} alt="фото" />
+                            <img className="photo-cont" src={`/photo/` + data.file} alt="" />
                         </div>
                         <div>
                             <div className="name">{data.name}</div>
