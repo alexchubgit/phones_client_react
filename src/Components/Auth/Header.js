@@ -9,7 +9,7 @@ class Header extends Component {
 
             <div className="header">
                 <header>
-                    <div className="logo_text">ТС_</div>
+                    <div className="logo_text">Directory</div>
                     <Search />
                 </header>
             </div>
