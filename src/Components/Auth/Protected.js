@@ -18,23 +18,23 @@ class Protected extends Component {
       this.props.history.push('/login/');
     }
 
-    // axios.get(`/getuser`, {
-    //   headers: {
-    //     'Authorization': `token ${token}`
-    //   }
-    // })
-    //   .then(res => {
+     axios.get(`/checkauth`, {
+       headers: {
+         'Authorization': `${token}`
+       }
+     })
+       .then(res => {
 
-    //     console.log(res.data);
+         console.log(res.data);
 
-    //     this.setState({
-    //       user: res.data
-    //     });
-    //   })
-    //   .catch(error => {
-    //     localStorage.removeItem('jwtToken');
-    //     this.props.history.push('/login/');
-    //   })
+         this.setState({
+           user: res.data
+         });
+       })
+       .catch(error => {
+         localStorage.removeItem('jwtToken');
+         this.props.history.push('/login/');
+       })
   }
 
   render() {
