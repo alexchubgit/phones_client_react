@@ -140,7 +140,7 @@ class EditPlace extends Component {
 
         axios.put(`/upd_place`, { idaddr, idperson, idplace, place, arm, ipphone, internal, work }, {
             headers: {
-                'Authorization': `token ${token}`
+                'Authorization': `${token}`
             }
         })
             .then(res => {

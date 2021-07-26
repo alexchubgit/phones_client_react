@@ -229,7 +229,7 @@ class EditPerson extends Component {
 
         axios.put(`/upd_person`, fd, {
             headers: {
-                'Authorization': `token ${token}`
+                'Authorization': `${token}`
             }
         })
             .then(res => {

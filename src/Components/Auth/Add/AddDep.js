@@ -104,7 +104,7 @@ class AddDep extends Component {
 
         axios.post(`/add_dep`, { depart, sdep, email, idparent, idaddr }, {
             headers: {
-                'Authorization': `token ${token}`
+                'Authorization': `${token}`
             }
         })
             .then(res => {

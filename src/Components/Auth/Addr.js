@@ -17,7 +17,7 @@ class Addr extends Component {
 
         axios.get(`/addr`, {
             headers: {
-                'Authorization': `token ${token}`
+                'Authorization': `${token}`
             }
         })
             .then(res => {
