@@ -48,7 +48,7 @@ class Place extends Component {
 
         axios.put(`/del_person_place`, { idplace }, {
             headers: {
-                'Authorization': `token ${token}`
+                'Authorization': `${token}`
             }
         })
             .then(res => {
